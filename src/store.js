@@ -8,7 +8,7 @@ import mySaga from './sagas';
 const sagaMiddleWare = createSagaMiddleware();
 
 // mount it on the store
-const store = createStore(
+export default createStore(
                   reducer, 
                   applyMiddleware(sagaMiddleWare)
             );
